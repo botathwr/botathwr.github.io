@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<!--<img src="/images/header.jpg" />-->
+
+<p class="blocktext">
+Bot@HWR ist ein fachbereichsübergreifendes Vorhaben mit dem Ziel den Forschungsschwerpunkt Robotik an der Hochschule für Wirtschaft und Recht Berlin auszubauen. Es sollen anwendungsorientierte und interdisziplinäre Forschungsprojekte initiiert werden um insbesondere neue Robotik-Anwendungsfelder zu ergründen. Im Fokus steht dabei zunächst der Sektor Pflege und Gesundheit. Zum Projektbeginn stehen für das Erstellen von Prototypen zwei modulare Roboterbaukastensysteme (Volksbot) des Fraunhofer IAIS zur Verfügung. Die fachlichen Schwerpunkte des interdisziplinären Teams liegen in der Robotik, Diversity-Strategien und in Partizipativer Softwareentwicklung.
+</p>
+
+
+
+<table class="gapped">
+    <tbody>
+    <tr>
+        <td>Fördergeber:</td>
+        <td>Institut für angewandte Forschung Berlin e.V.</td>
+    </tr>
+    <tr>
+        <td>Zeitraum:</td>
+        <td>seit 01.10.2016</td>
+    </tr>
+    <tr>
+        <td>Beteiligte Personen:</td>
+        <td>
+            <ul class="plain">
+                <li>Prof. Dr. Heike Wiesner (Projektleitung)</li>
+                <li>Prof. Dr. Dagmar Monett Diaz</li>
+                <li>Holger Zimmermann</li>
+                <li>Hermann Stolte</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Verwandte Projekte</td>
+        <td>
+            <ul class="plain">
+                <li>MINT4HWR</li>
+                <li>Roberta</li>
+                <li>Partizipative Gestaltung technologieunterstützter Lernszenarien</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Aktuelles</h2>
+<div class="posts">
+    {% for post in site.posts %}
+    <ul class="plain">
+
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%d.%m.%Y" }} - {{ post.title }}</a></li>
+    </ul>
+    {% endfor %}
+</div>
+
+
+<h2>Volksbot-Roboterbaukastensystem</h2>
+<p>Das Volksbot-System ist modular aufgebaut und beinhaltet die Basisplattform mit vier Rädern (davon zwei mit Antrieb), Stromversorgung (Akku), einen Laserscanner und einen Greifarm. Nachstehend je ein Bild der Volksbot-Basisplattform und des dazugehörigen Greifarms.</p>
+<img src="/images/volksbot_1.jpg" />
+<img src="/images/volksbot_2.jpg" />
+<!--<h2>Publikationen</h2>-->
+
