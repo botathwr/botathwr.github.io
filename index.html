@@ -12,8 +12,12 @@ Bot@HWR ist ein fachbereichsübergreifendes Vorhaben mit dem Ziel den Forschungs
 <table class="gapped">
     <tbody>
     <tr>
+        <td>Zuwendungsempfänger:</td>
+        <td><a href="http://www.hwr-berlin.de/" target="_blank">Hochschule für Wirtschaft und Recht Berlin</a></td>
+    </tr>
+    <tr>
         <td>Fördergeber:</td>
-        <td>Institut für angewandte Forschung Berlin e.V.</td>
+        <td><a href="http://www.ifaf-berlin.de/" target="_blank">Institut für angewandte Forschung Berlin e.V.</a></td>
     </tr>
     <tr>
         <td>Zeitraum:</td>
@@ -23,10 +27,10 @@ Bot@HWR ist ein fachbereichsübergreifendes Vorhaben mit dem Ziel den Forschungs
         <td>Beteiligte Personen:</td>
         <td>
             <ul class="plain">
-                <li>Prof. Dr. Heike Wiesner (Projektleitung)</li>
-                <li>Prof. Dr. Dagmar Monett Diaz</li>
-                <li>Holger Zimmermann</li>
-                <li>Hermann Stolte</li>
+                <li><a href="http://www.heike-wiesner.de/" target="_blank">Prof. Dr. Heike Wiesner</a> (Projektleitung)</li>
+                <li><a href="http://www.monettdiaz.com/" target="_blank">Prof. Dr. Dagmar Monett Diaz</a></li>
+                <li><a href="http://www.hwr-berlin.de/fachbereich-wirtschaftswissenschaften/kontakt/personen/kontakt-info/2987/" target="_blank">Holger Zimmermann</a></li>
+                <li><a href="https://www.researchgate.net/profile/Hermann_Stolte" target="_blank">Hermann Stolte</a></li>
             </ul>
         </td>
     </tr>
@@ -40,22 +44,41 @@ Bot@HWR ist ein fachbereichsübergreifendes Vorhaben mit dem Ziel den Forschungs
             </ul>
         </td>
     </tr>
+    <!--<tr>
+        <td></td>
+        <td style="text-align: right"><a href="" target="_blank">&#8594; Projektdetails</a></td>
+    </tr>-->
     </tbody>
 </table>
 
 <h2>Aktuelles</h2>
+
 <div class="posts">
     {% for post in site.posts %}
+    <article class="post">
+
+        <h3>{{ post.title }}</h3>
+
+        <div class="entry">
+            {{ post.content }}
+        </div>
+
+    </article>
+    {% endfor %}
+</div>
+
+<!--<div class="posts">
+    <!--{% for post in site.posts %}
     <ul class="plain">
 
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%d.%m.%Y" }} - {{ post.title }}</a></li>
     </ul>
-    {% endfor %}
-</div>
+    {% endfor %}-->
+<!--</div>-->
 
 
 <h2>Volksbot-Roboterbaukastensystem</h2>
-<p>Das Volksbot-System ist modular aufgebaut und beinhaltet die Basisplattform mit vier Rädern (davon zwei mit Antrieb), Stromversorgung (Akku), einen Laserscanner und einen Greifarm. Nachstehend je ein Bild der Volksbot-Basisplattform und des dazugehörigen Greifarms.</p>
+<p>Das <a href="http://www.volksbot.de/" target="_blank">Volksbot-System</a> ist eine modular aufgebaute Hardwareplattform zum Erstellen von Roboter-Prototypen. Es setzt sich aus einer Basiskomponente, vier Rädern (davon zwei mit Antrieb), einer Stromversorgung (Akku), einem Laserscanner und einem Greifarm zusammen. Für die Nutzung im Rahmen von Bot@HWR stehen zwei baugleiche Roboter zur Verfügung.</p>
 <img src="/images/volksbot_1.jpg" />
 <img src="/images/volksbot_2.jpg" />
 <!--<h2>Publikationen</h2>-->
